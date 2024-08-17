@@ -1,4 +1,4 @@
-import { Heart, Instagram, Mail, Linkedin, LucideIcon } from "lucide-react";
+import { Instagram, Mail, Linkedin } from "lucide-react";
 import "./Header.css";
 import { ComponentPropsWithoutRef } from "react";
 import classNames from "classnames";
@@ -8,7 +8,7 @@ import { SymfonyIcon } from "./icons/Symfony";
 
 const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
     return (
-        <span className={classNames("badge-md badge-outline bg-slate-700 border border-slate-500 rounded  py-1 mx-1 inline-flex items-center text-slate-300", className)} {...props} />
+        <span className={classNames("badge-md badge-outline bg-slate-700 border border-slate-500 rounded px-1 py-2 mx-1 inline-flex items-center text-slate-300 roboto-bold", className)} {...props} />
     );
 };
 
@@ -23,6 +23,7 @@ const IconButton = ({ icon: Icon, target, size }: { icon: any; target: string; s
 export default function Header() {
     return (
         <div className="flex flex-col items-start gap-2 mt-12">
+            <p className="mb-5">Welcome on exemple.com</p>
             <div className="inline-flex overflow-visible">
                 <p className="text-5xl font-bold bg-gradient-to-r mr-3 pb-3">Yanis</p>
                 <p className="text-5xl font-bold gradient-text">Capelle</p>
