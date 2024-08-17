@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')], // Active DaisyUI en tant que plugin
+  plugins: [require('daisyui')], 
   daisyui: {
-    themes: ["light", "dark", "cupcake"], // Ajoute les thèmes que tu veux utiliser
+    themes: ["light", "dark", "cupcake"],
   },
 }
 
