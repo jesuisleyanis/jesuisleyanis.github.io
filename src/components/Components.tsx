@@ -1,3 +1,5 @@
+import { Rabbit } from "lucide-react";
+
 function Button() {
     return (<button className="btn btn-success">Click here</button>);
 }
@@ -5,7 +7,11 @@ function Button() {
 export default function Components() {
     return (
         <div className="flex flex-col items-start gap-4">
-            <button />
+            <button className="btn-lg btn-danger">
+                <Rabbit size={24}>
+
+                </Rabbit>
+            </button>
         </div>
     )
 }
