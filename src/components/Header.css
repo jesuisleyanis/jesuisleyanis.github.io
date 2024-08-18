@@ -1,7 +1,7 @@
 /* Header.css */
 .gradient-text {
     display: inline-block;
-    animation: gradientAnimation 20s ease-in-out infinite;
+    animation: gradientAnimation 15s ease-in-out infinite;
     background: linear-gradient(-60deg, rgba(28,87,201,1) 0%, rgba(119,0,255,1) 28%, rgba(255,0,255,1) 64%, rgba(123,0,255,1) 100%);
     background-clip: text;
     background-size: 300%;
