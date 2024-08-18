@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        react: '#7ed6fa'
+        react: '#7ed6fa',
+        grisjoli: '#c6c9d5'
       }
     },
   },

@@ -1,16 +1,9 @@
 import { Instagram, Mail, Linkedin } from "lucide-react";
 import "./Header.css";
-import { ComponentPropsWithoutRef } from "react";
-import classNames from "classnames";
 import { ReactIcon } from "./icons/React";
 import { SymfonyIcon } from "./icons/Symfony";
+import Code from "./Code";
 
-
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
-    return (
-        <span className={classNames("badge-md badge-outline bg-slate-700 border border-slate-500 rounded px-1 py-2 mx-1 inline-flex items-center text-slate-300 roboto-bold", className)} {...props} />
-    );
-};
 
 const IconButton = ({ icon: Icon, target, size }: { icon: any; target: string; size?: number }) => {
     return (
@@ -33,12 +26,12 @@ export default function Header() {
                 <p className="text-l text-zinc-500 break-words">
                     I love creating modern and design websites using{" "}
                     <Code>
-                        <ReactIcon size={12} class={"mr-0.5"} />
+                        <ReactIcon size={13} class={"mr-0.5"} />
                         React
                     </Code>{" "}
                     and 
                     <Code>
-                        <SymfonyIcon size={12} class={"mr-0.5"} />
+                        <SymfonyIcon size={13} class={"mr-0.5"} />
                         Symfony
                     </Code>
                 </p>

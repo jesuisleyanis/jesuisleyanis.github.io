@@ -1,6 +1,7 @@
 import Header from "../src/components/Header";
 import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
+import SkillsSection from "./components/SkillsSection";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
               <div className="mt-10 size-2/4">
                 <ExperienceSection></ExperienceSection>
               </div>
+            </div>
+            <div className="mt-24">
+            <SkillsSection></SkillsSection>
             </div>
         </div>
     );
