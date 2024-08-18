@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        react: '#7ed6fa'
+      }
+    },
   },
   plugins: [require('daisyui')], 
   daisyui: {

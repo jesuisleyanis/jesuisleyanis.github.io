@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 
 const ProjectsRow = ({img, target, text, isFinnish}: {img: string; target: string, text: string; isFinnish: boolean}) => {
     return (
-        <div className="flex">
+        <div className="flex mt-2">
             <img className="w-9 object-contain" src={img} alt="img" />
             <div className="flex flex-col ms-4">
                 <p className="text-sm font-bold flex">{text}</p>
@@ -22,7 +22,7 @@ const ProjectsRow = ({img, target, text, isFinnish}: {img: string; target: strin
 
 export default function ProjectsSection() {
     return (
-        <div className="card card-compact border border-slate-700 shadow-xl card-color p-3">
+        <div className="card card-compact border border-slate-700 shadow-xl card-color p-3 mr-5">
             <div className="flex">
                 <RocketIcon color="#f4f4f51a" className="fill-zinc-100/10" strokeWidth={1.5}/>
                 <p className="ps-2 icons-section text-sm font-bold">My projects</p>
