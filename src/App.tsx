@@ -2,6 +2,7 @@ import Header from "../src/components/Header";
 import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import SkillsSection from "./components/SkillsSection";
+import ContactSection from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -17,8 +18,12 @@ function App() {
               </div>
             </div>
             <div className="mt-24">
-            <SkillsSection></SkillsSection>
+              <SkillsSection></SkillsSection>
             </div>
+            <div className="mt-24">
+              <ContactSection></ContactSection>
+            </div>
+            <div className="h-32"></div>
         </div>
     );
 }

@@ -42,7 +42,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="w-full h-full min flex justify-center items-center  mt-12">
-                <ReactIcon size={180} />
+                <img src="src/assets/moi.jpg" alt="photo de yanis" className="rounded-full h-64" />
             </div>
         </div>
     );
