@@ -15,7 +15,7 @@ const Skill = ({
     subtitle: any;
 }) => {
     return (
-        <div className="flex flex-col size-1/3 space-y-3 mt-4 p-2">
+        <div className="flex flex-col lg:size-1/3 space-y-3 mt-4 p-2">
             {icon}
             <p className="text-3xl font-semibold text-grisjoli">{title}</p>
             <p>{subtitle}</p>
@@ -31,7 +31,7 @@ export default function SkillsSection() {
                 Skills
             </Code>
             <h2 className="font-bold text-3xl text-grisjoli">My technology stack...</h2>
-            <div className="flex">
+            <div className="flex flex-col lg:flex-row">
                 <Skill
                     icon={<ReactIcon size={60} class="spin-animation" />}
                     title={"React"}
