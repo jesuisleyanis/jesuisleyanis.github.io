@@ -1,7 +1,5 @@
 import { Contact, ExternalLink } from "lucide-react";
 import Code from "./Code";
-import { Instagram } from "lucide-react";
-import { SymfonyIcon } from "./icons/Symfony";
 
 const ContactCard = ({
     img,
