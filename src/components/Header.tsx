@@ -41,7 +41,7 @@ export default function Header() {
                     <IconButton icon={Linkedin} target={"https://www.linkedin.com/in/yanis-capelle-3b1077231/"} size={18} />
                 </div>
             </div>
-            <div className="w-full h-full flex justify-center items-center mt-12 lg:mt-0">
+            <div className="w-full h-full flex justify-center items-center mt-12">
                 <img src="src/assets/moi.jpg" alt="photo de yanis" className="rounded-full h-64" />
             </div>
         </div>

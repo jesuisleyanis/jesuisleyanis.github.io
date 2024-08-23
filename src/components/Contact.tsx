@@ -17,13 +17,13 @@ const ContactCard = ({
     subtext: string;
 }) => {
     return (
-        <div className="card card-compact border border-slate-700 shadow-xl card-color p-3 size-1/3">
+        <div className="card card-compact border border-slate-700 shadow-xl card-color p-3 xl:size-1/3 mt-2 xl:mt-0">
             <div className="flex">
                 <div className="relative">
                     <img
                         src={img}
                         alt="img"
-                        className="rounded-full object-contain w-12 aspect-auto"
+                        className="rounded-full object-contain min-w-12 w-12 aspect-auto"
                     />
                     <div className="absolute bottom-0 right-0 bg-white rounded-full p-0.5">
                         {icon}
@@ -31,7 +31,7 @@ const ContactCard = ({
                 </div>
                 <div className="flex flex-col ms-3 w-full">
                     <a href={target}>{text}</a>
-                    <p className="text-xs mt-1 text-gray-500 flex">{subtext}</p>
+                    <p className="text-xs mt-1 text-gray-500 flex overflow-hidden text-ellipsis">{subtext}</p>
                 </div>
                 <div className="flex flex-col justify-center items-end ">
                     <a href={target}>
@@ -53,7 +53,7 @@ export default function ContactSection() {
             <h2 className="font-bold text-3xl text-grisjoli">
                 Contact me with...
             </h2>
-            <div className="flex space-x-2 mt-3">
+            <div className="flex flex-col xl:flex-row xl:space-x-2 mt-3">
                 <ContactCard
                     img={"/src/assets/moi.jpg"}
                     text="@yanis_cpl_"
@@ -84,7 +84,7 @@ export default function ContactSection() {
 
                 <ContactCard
                     img={"/src/assets/moi.jpg"}
-                    text="Send me an email"
+                    text="Email me"
                     subtext="Contact me via my mail"
                     target="mailto:yanis.capelle@ecoles-epsi.net"
                     icon={
