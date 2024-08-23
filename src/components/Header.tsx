@@ -15,8 +15,8 @@ const IconButton = ({ icon: Icon, target, size }: { icon: any; target: string; s
 
 export default function Header() {
     return (
-        <div className="flex">
-            <div className="flex flex-col items-start gap-2 mt-12 size-2/3">
+        <div className="flex flex-col lg:flex-row lg:space-x-8">
+            <div className="flex flex-col items-start gap-2 mt-12 lg:w-2/3">
                 <p className="mb-5">Welcome on exemple.com</p>
                 <div className="inline-flex overflow-visible">
                     <p className="text-5xl font-bold bg-gradient-to-r mr-3 pb-3">Yanis</p>
@@ -41,7 +41,7 @@ export default function Header() {
                     <IconButton icon={Linkedin} target={"https://www.linkedin.com/in/yanis-capelle-3b1077231/"} size={18} />
                 </div>
             </div>
-            <div className="w-full h-full min flex justify-center items-center  mt-12">
+            <div className="w-full h-full flex justify-center items-center mt-12 lg:mt-0">
                 <img src="src/assets/moi.jpg" alt="photo de yanis" className="rounded-full h-64" />
             </div>
         </div>
