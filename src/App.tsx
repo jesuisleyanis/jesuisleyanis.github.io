@@ -9,11 +9,11 @@ function App() {
     return (
         <div className="size-3/5 place-content-center">
             <Header></Header>
-            <div className="flex">
-              <div className="mt-10 size-2/4">
+            <div className="flex flex-col lg:flex-row">
+              <div className="mt-10 lg:size-2/4">
                   <ProjectsSection></ProjectsSection>
               </div>
-              <div className="mt-10 size-2/4">
+              <div className="mt-10 lg:size-2/4">
                 <ExperienceSection></ExperienceSection>
               </div>
             </div>

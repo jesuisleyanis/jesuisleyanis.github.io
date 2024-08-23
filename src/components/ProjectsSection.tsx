@@ -39,7 +39,7 @@ const ProjectsRow = ({
 
 export default function ProjectsSection() {
     return (
-        <div className="card card-compact border border-slate-700 shadow-xl card-color p-3 mr-5">
+        <div className="card card-compact border border-slate-700 shadow-xl card-color p-3 lg:mr-5">
             <div className="flex">
                 <RocketIcon
                     color="#f4f4f51a"

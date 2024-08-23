@@ -35,19 +35,23 @@ const ExperiencesRow = ({
                         {text}
                     </a>
                     <div className="flex space-x-1">
-                        {badges.map((badge, index) => (
-                            <Badge key={index} text={badge}></Badge>
-                        ))}
+                        <Badge text={badges[0]} />
+                        <div className="hidden lg:flex space-x-1">
+                            {badges.map((badge, index) => (
+                                index > 0 && <Badge key={index} text={badge} />
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="flex justify-between w-full">
-                    <p className="text-xs mt-1 text-gray-500">{libelle}</p>
-                    <p className="text-xs mt-1 text-gray-500">{duration}</p>
+                    <p className="lg:text-xs text-[0.65rem] mt-1 text-gray-500">{libelle}</p>
+                    <p className="lg:text text-[0.65rem] mt-1 text-gray-500 text-end">{duration}</p>
                 </div>
             </div>
         </div>
     );
 };
+
 
 export default function ExperienceSection() {
     return (
