@@ -14,24 +14,26 @@ const ProjectsRow = ({
     isFinnish: boolean;
 }) => {
     return (
-        <div className="flex mt-2">
-            <img className="w-9 object-contain" src={img} alt="img" />
-            <div className="flex flex-col ms-4">
-                <p className="text-sm font-bold flex">{text}</p>
-                {isFinnish ? (
-                    <a href={target}>
+        <a href={target}>
+            <div className="flex p-2 hover:bg-black/20 cursor-pointer rounded-lg transition-colors">
+                <img className="w-9 object-contain" src={img} alt="img" />
+                <div className="flex flex-col ms-4">
+                    <p className="text-sm font-bold flex">{text}</p>
+                    {isFinnish ? (
+                        <a href={target}>
+                            <p className="text-xs mt-1 text-gray-500 flex">
+                                Voir le projet
+                                <MoveRight size={18} className="ms-4" />
+                            </p>
+                        </a>
+                    ) : (
                         <p className="text-xs mt-1 text-gray-500 flex">
-                            Voir le projet
-                            <MoveRight size={18} className="ms-4" />
+                            Is in development...
                         </p>
-                    </a>
-                ) : (
-                    <p className="text-xs mt-1 text-gray-500 flex">
-                        Is in development...
-                    </p>
-                )}
+                    )}
+                </div>
             </div>
-        </div>
+        </a>
     );
 };
 
