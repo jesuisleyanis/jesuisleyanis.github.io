@@ -42,7 +42,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="w-full h-full flex justify-center items-end">
-                <img src="src/assets/moi.jpg" alt="photo de yanis" className="rounded-full h-56" />
+                <img src="/src/assets/moi.jpg" alt="photo de yanis" className="rounded-full h-56" />
             </div>
         </div>
     );
