@@ -1,11 +1,15 @@
 import { Contact, ExternalLink } from "lucide-react";
 import Code from "./Code";
+import Moi from '../assets/moi.jpg';
+import Gmail from '../assets/gmail.png';
+import Instagram from '../assets/sociale.png';
+import Linkedin from '../assets/linkedin.png';
 
 const ContactCard = ({
     img,
     target,
     text,
-    icon,  // Le logo du réseau social
+    icon,  
     subtext,
 }: {
     img: string;
@@ -53,13 +57,13 @@ export default function ContactSection() {
             </h2>
             <div className="flex flex-col xl:flex-row xl:space-x-2 mt-3">
                 <ContactCard
-                    img={"/src/assets/moi.jpg"}
+                    img={Moi}
                     text="@yanis_cpl_"
                     subtext="Follow me on instagram"
                     target={"https://www.instagram.com/yanis_cpl_/"}
                     icon={
                         <img 
-                            src="/src/assets/sociale.png"
+                            src={Instagram}
                             className="h-4 aspect-auto object"
                             alt="img"
                         />
@@ -67,13 +71,13 @@ export default function ContactSection() {
                 />
 
                 <ContactCard
-                    img={"/src/assets/moi.jpg"}
+                    img={Moi}
                     text="@yanis-capelle"
                     subtext="Here is my linkedin"
                     target="https://www.linkedin.com/in/yanis-capelle-3b1077231/"
                     icon={
                         <img 
-                            src="/src/assets/linkedin.png"
+                            src={Linkedin}
                             className="h-4 aspect-auto object"
                             alt="img"
                         />
@@ -81,13 +85,13 @@ export default function ContactSection() {
                 />
 
                 <ContactCard
-                    img={"/src/assets/moi.jpg"}
+                    img={Moi}
                     text="Email me"
                     subtext="Contact me via my mail"
                     target="mailto:yanis.capelle@ecoles-epsi.net"
                     icon={
                         <img 
-                            src="/src/assets/gmail.png"
+                            src={Gmail}
                             className="h-4 aspect-auto object"
                             alt="img"
                         />

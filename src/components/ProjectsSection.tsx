@@ -1,6 +1,11 @@
 import "../App.css";
 import { RocketIcon } from "./icons/Rocket";
 import { MoveRight } from "lucide-react";
+import Pharmacy from '../assets/pharmacie.png';
+import Mercure from '../assets/mercure.png';
+import LearnIt from '../assets/apprendre.png';
+import Snake from '../assets/serpent.png';
+import Web from '../assets/site-internet.png'
 
 const ProjectsRow = ({
     img,
@@ -52,31 +57,31 @@ export default function ProjectsSection() {
             </div>
             <div className="mt-3">
                 <ProjectsRow
-                    img={"/src/assets/mercure.png"}
+                    img={Mercure}
                     target={"#"}
                     text={"Mercure Hotel"}
                     isFinnish={true}
                 ></ProjectsRow>
                 <ProjectsRow
-                    img={"/src/assets/serpent.png"}
+                    img={Snake}
                     target={"#"}
                     text={"Snake Game"}
                     isFinnish={true}
                 ></ProjectsRow>
                 <ProjectsRow
-                    img={"/src/assets/apprendre.png"}
+                    img={LearnIt}
                     target={"#"}
                     text={"Learn It"}
                     isFinnish={true}
                 ></ProjectsRow>
                 <ProjectsRow
-                    img={"/src/assets/site-internet.png"}
+                    img={Web}
                     target={"#"}
                     text={"My Portfolio"}
                     isFinnish={true}
                 ></ProjectsRow>
                 <ProjectsRow
-                    img={"/src/assets/pharmacie.png"}
+                    img={Pharmacy}
                     target={"#"}
                     text={"Pharmacy Shedule"}
                     isFinnish={false}

@@ -1,7 +1,8 @@
 import "../App.css";
 import { WalletIcon } from "./icons/Wallet";
-import { ReactIcon } from "./icons/React";
-ReactIcon;
+import Izydesk from '../assets/izydesk.png';
+import Dragon from '../assets/serpent.png';
+import Mediprix from '../assets/médiprix.png';
 
 const Badge = ({ text }: { text: string }) => {
     return (
@@ -68,7 +69,7 @@ export default function ExperienceSection() {
             </div>
             <div className="mt-3">
                 <ExperiencesRow
-                    img={"/src/assets/izydesk.png"}
+                    img={Izydesk}
                     target={"https://izydesk.fr/"}
                     text={"Izydesk"}
                     libelle={"Développeur web fullstack"}
@@ -76,7 +77,7 @@ export default function ExperienceSection() {
                     badges={["Symfony", "React", "Bootstrap"]}
                 />
                 <ExperiencesRow
-                    img={"/src/assets/dragon.png"}
+                    img={Dragon}
                     target={"https://www.dragonsports.eu/fr/"}
                     text={"DragonSports"}
                     libelle={"Développeur web fullstack"}
@@ -84,7 +85,7 @@ export default function ExperienceSection() {
                     badges={["Laravel", "Bootstrap"]}
                 />
                 <ExperiencesRow
-                    img={"/src/assets/médiprix.png"}
+                    img={Mediprix}
                     target={"https://mediprix.fr/"}
                     text={"Médiprix"}
                     libelle={"Développeur web fullstack"}

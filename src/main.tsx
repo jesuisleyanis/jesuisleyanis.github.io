@@ -1,13 +1,10 @@
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
+import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
 
-const basename = import.meta.env.VITE_PUBLIC_URL || '/';
-
-ReactDOM.render(
-  <BrowserRouter basename={basename}>
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+  </StrictMode>,
+)

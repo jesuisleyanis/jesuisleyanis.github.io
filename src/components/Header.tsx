@@ -3,6 +3,7 @@ import "./Header.css";
 import { ReactIcon } from "./icons/React";
 import { SymfonyIcon } from "./icons/Symfony";
 import Code from "./Code";
+import Moi from '../assets/moi.jpg';
 
 
 const IconButton = ({ icon: Icon, target, size }: { icon: any; target: string; size?: number }) => {
@@ -17,7 +18,7 @@ export default function Header() {
     return (
         <div className="flex flex-col lg:flex-row lg:space-x-8">
             <div className="flex flex-col items-start place-content-center gap-2 mt-12 lg:w-2/3">
-                <p className="mb-5">Welcome on exemple.com</p>
+                <p className="mb-5">Welcome on my personal website</p>
                 <div className="inline-flex overflow-visible">
                     <p className="text-5xl font-bold bg-gradient-to-r mr-3 pb-3">Yanis</p>
                     <p className="text-5xl font-bold gradient-text">Capelle</p>
@@ -42,7 +43,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="w-full h-full flex justify-center items-end">
-                <img src="/src/assets/moi.jpg" alt="photo de yanis" className="rounded-full h-56" />
+                <img src={Moi} alt="photo de yanis" className="rounded-full h-56" />
             </div>
         </div>
     );
